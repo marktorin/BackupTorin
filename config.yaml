@@ -1,0 +1,24 @@
+# Telegram
+telegram:
+  bot_token: "Ваш_Токен_Телеграм_Бота"
+  chat_id: "Ваш_Чат_Айди"
+  api_base_url: "https://api.telegram.org"      # Можно использовать свой api
+
+# Бекап
+backup:
+  source_path: "Путь_Бекапа"      # Что бекапим
+  storage_path: "Путь_Сохранения_Бекапов"      # Куда складываем архивы
+  archive_name_prefix: "backup"
+  compression: "zip"                           # zip, tar.gz, tar.bz2
+  max_backups: 2                               # Сколько хранить
+
+# Расписание
+schedule:
+  enabled: true
+  interval_hours: 24                           # Раз в сутки
+  start_time: "23:00"                          # Во сколько (если enabled)
+
+# Логирование
+logging:
+  level: "INFO"
+  file: "backup.log"
